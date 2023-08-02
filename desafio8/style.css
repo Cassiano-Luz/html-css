@@ -1,0 +1,12 @@
+
+
+.cabecalho{
+    height: 10vh;
+    background-color: #132B39;
+}
+
+.logo_principal{
+    display: flex;
+    margin-left: 1%;
+    height: 90%;
+}
