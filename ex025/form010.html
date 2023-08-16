@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Output</title>
+</head>
+<body>
+    <h1>Testando Output - Cálculo Idade c/ JS</h1>
+            <fieldset>
+                <legend>Calculadora Idade</legend>
+                <form action="cadastro.php" autocomplete="on" method="get">
+                    <p>
+                        <label for="iano">Em que ano você nasceu?</label>
+                        <input type="number" name="ano" id="iano" min="1900" max="2023" value="2010" oninput="calcIdade()">
+                    </p>
+                    <p>
+                        <label for="iidade">Sua idade é:</label>
+                        <output id="iidade">0</output>
+                    </p>
+                </form>
+            </fieldset>
+
+            <script>
+            function calcIdade() {
+                let atual = new Date().getFullYear()
+                iidade.innerHTML = Number(atual) - Number(iano.value)
+            }
+            </script>
+
+    </body>
+</html>

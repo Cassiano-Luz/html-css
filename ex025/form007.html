@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 007</title>
+</head>
+<body>
+    <h1>Formulário Email</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Testes</legend>
+            <p>
+                <label for="iestado">Estado:</label>
+                <select name="estado" id="iestado">
+                    <option value="">---Escolha---</option>
+                    <optgroup label="Sudeste">
+                        <option value="">São Paulo</option>
+                        <option value="">Paraná</option>
+                        <option value="">Santa Catarina</option>
+                        <option value="">Rio Grande do Sul</option>
+                    </optgroup>
+
+                    <optgroup label="Centro-Oeste">
+                        <option value="">Mato Grosso</option>
+                        <option value="">Mato Grosso do Sul</option>
+                        <option value="">Goiás</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option>Administrador</option>
+                    <option>Contador</option>
+                    <option>Engenheiro</option>
+                    <option>Programador</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="itxtmsg">Mensagem:</label><br>
+                <textarea name="txtmsg" id="itxtmsg" cols="30" rows="10"></textarea>
+            </p>
+        </fieldset>
+        <!--Estudar mais sobre RegEx (padrões que se colocam nos inputs)-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>

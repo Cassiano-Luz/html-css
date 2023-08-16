@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Output</title>
+</head>
+<body>
+    <h1>Testando Output - Soma via JS</h1>
+        <fieldset>
+            <legend>Soma 2 Campos</legend>
+            <form action="cadastro.php" autocomplete="on" method="get">
+                <p>
+                    <label for="inum1">Número 1:</label>
+                    <input type="number" name="num1" id="inum1" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+                </p>
+                <p>
+                    <label for="inum2">Número 2:</label>
+                    <input type="number" name="num2" id="inum2" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+                </p>
+                <p>
+                    <label for="inum1">Soma:</label>
+                    <output name="soma" id="isoma">0</output>
+                </p>
+
+            </form>
+        </fieldset>
+    </body>
+</html>
