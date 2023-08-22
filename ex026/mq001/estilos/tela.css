@@ -32,8 +32,14 @@ menu li{
     color: white;
 }
 
+article > h2{
+    margin-bottom: 20px;
+}
+
 article{
     width: 600px;
     display: block;
     margin: 0 auto;
+    margin-top: 3em;
+    text-align: justify;
 }
